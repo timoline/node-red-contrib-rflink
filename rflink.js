@@ -166,6 +166,8 @@ module.exports = function(RED) {
             idx++;
         }
 
+		result.timestamp = new Date().toISOString();
+		
         return result;
     }
 }
